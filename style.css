@@ -13,6 +13,11 @@ body{
 header{
     padding: 20px;
 }
+.heading img {
+    max-width: 150px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain the image's aspect ratio while resizing */
+}
+
 .content-container{
     display: flex;
     flex-direction: row;
@@ -23,6 +28,10 @@ content{
     padding: 20px;
     text-align: center;
 }
+.mockup img{
+    max-width: 450px;
+}
+
 .content-text h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 400, 600;
@@ -104,4 +113,45 @@ footer {
 }
 .logo svg{
     transition: fill 0.2s;
+}
+
+@media (max-width: 375px) {
+    
+    body {
+        background-image: url("/images/bg-mobile.svg");
+        background-size: cover;
+    }
+    .mockup img{
+        max-width: 250px;
+    }
+    
+    .content-container {
+        flex-direction: column; /* Stack content vertically on mobile */
+    }
+    
+    .content-text h1 {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 0em; /* Adjust text size for mobile */
+    }
+    
+    .content-text p {
+        font-size: 0.7rem; /* Adjust text size for mobile */
+        text-align: center;
+        width: auto;
+        
+    }
+    
+    .register-button {
+        width: 80px; /* Adjust button width for mobile */
+        height: 25px; /* Adjust button height for mobile */
+        margin: 20px auto;
+        
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
 }
