@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:url("images/bg-desktop.svg") ;
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+}
+
+header{
+    padding: 20px;
+}
+.content-container{
+    display: flex;
+    flex-direction: row;
+}
+
+content{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+.content-text h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400, 600;
+    color: white;
+    margin-bottom: 10px;
+    font-style: none;
+    font-size: x-large;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.content-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-decoration: none; 
+    font-size: x-small;
+    text-align: left;
+    line-height: 1.6;
+    width: 300px;
+}
+footer{
+    display: flex;
+    justify-content: right;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.register-button{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    flex-direction:left;
+    text-decoration:none;
+    background-color: hsl(300, 69%, 71%);
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-weight: 600;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.register-button:hover {
+    background-color: white; /* Change background to white on hover */
+    color: hsl(300, 69%, 71%); /* Change text color to purple on hover */
+}
+
+
+footer {
+    display: flex;
+    justify-content: flex-end; /* Shift logos to the right */
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    margin-right: 15px; /* Add spacing between logos, adjust as needed */
+    transition: transform 0.2s;
+    transition: color 0.2s;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+.logo svg:hover{
+    fill: purple;
+}
+.logo svg{
+    transition: fill 0.2s;
+}
