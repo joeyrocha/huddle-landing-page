@@ -115,7 +115,7 @@ footer {
     transition: fill 0.2s;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 650px) {
     
     body {
         background-image: url("images/bg-mobile.svg");
